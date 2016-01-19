@@ -1,0 +1,138 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="43b9c79c-ec30-48ab-bffe-40b10ad8ea82" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Type Examen</ID>
+  <Name>Type Examen</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e03911b2-4b0c-4e7a-87aa-cc740276551a">
+    <DataSourceViewID>DBIG3B8</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="d1b52a06-3b51-4779-a44e-45ced6db0352">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="ed011945-5e56-477d-99b8-dd258597d5be">
+      <ID>Code Examen</ID>
+      <Name>Code Examen</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="ee872906-3f14-472c-bdc2-d52c8577dce3">
+          <DataType>WChar</DataType>
+          <DataSize>4</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4beb7328-f57e-478f-9b72-b82a4b7f49c8">
+            <TableID>dbo_DimTypeExamen</TableID>
+            <ColumnID>CodeExamen</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="e8bca424-ed10-4e5f-8cb1-d6ef7c4a61c0">
+          <AttributeID>Libelle Exam</AttributeID>
+          <Name>Libelle Exam</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="df9a2dc8-1787-47fc-8dc5-5f424689ab70">
+          <AttributeID>Prix Soumis</AttributeID>
+          <Name>Prix Soumis</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="4d9b55eb-acb4-4292-96d8-621abea6588a">
+          <AttributeID>Prix Non Soumis</AttributeID>
+          <Name>Prix Non Soumis</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b9928578-c7bd-43c7-ae1f-364afdf9feb0">
+      <ID>Libelle Exam</ID>
+      <Name>Libelle Exam</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="477d86aa-e094-44b3-819f-2707800814ea">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8c4a6e36-1e01-4fd5-91a2-d13adbdd738b">
+            <TableID>dbo_DimTypeExamen</TableID>
+            <ColumnID>LibelleExam</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6e47bdc9-f94b-4aa6-9f58-234f84084182">
+      <ID>Prix Soumis</ID>
+      <Name>Prix Soumis</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5e8839e1-ce07-4e9a-abcc-8a83b2c7306d">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="9f39d55c-77a9-48ee-bdb6-2e658d12e70b">
+            <TableID>dbo_DimTypeExamen</TableID>
+            <ColumnID>PrixSoumis</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ca29273a-0903-4dd7-8dc5-6a10c2ab96dd">
+      <ID>Prix Non Soumis</ID>
+      <Name>Prix Non Soumis</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="65608bb7-fc91-4b74-b539-d2930de4e421">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="392c8f89-d492-4b45-af79-644aab9a3ed4">
+            <TableID>dbo_DimTypeExamen</TableID>
+            <ColumnID>PrixNonSoumis</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
